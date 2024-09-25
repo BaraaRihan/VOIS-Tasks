@@ -1,0 +1,55 @@
+Test Case ID,Title,Preconditions,Test Steps,Test Data,Expected Result,Functional/Non-Functional
+TC01,Search for Item and Add to Cart,Browser opened,1. Open Amazon homepage,Search term: 'car accessories',Amazon search results are displayed for car accessories,Functional
+,,,2. Type 'car accessories' in the search bar,,,
+,,,3. Press Enter,,,
+TC02,Select the First Item from Search Results,User is logged in / Guest,1. Click on the first item from the search results,,The selected car accessory product page opens,Functional
+TC03,Add Selected Item to Cart,User is on product page,1. Click on 'Add to Cart',,Item is successfully added to the cart,Functional
+TC04,Open the Cart,User is logged in / Guest,1. Click on the cart icon in the header,,The cart page opens displaying the added items,Functional
+TC05,Verify Item in Cart,User is on cart page,1. Check if the item added is displayed in the cart,,The item is displayed in the cart,Functional
+TC06,Verify Correct Item in Cart,User is on cart page,1. Check the name and details of the item in the cart,,The correct item details match what was added,Functional
+TC07,Verify Item Count in Cart,User is on cart page,1. Verify the number of items in the cart after adding,,The count reflects the number of added items,Functional
+TC08,Add Multiple Items to Cart,User is logged in / Guest,1. Search for 'car accessories',Search term: 'car accessories',Multiple items are added to the cart without issues,Functional
+,,,2. Select another item,,,
+,,,3. Add it to the cart,,,
+TC09,Check Cart Item Price,User is on cart page,1. Verify the total price of items in the cart,,The total price is calculated accurately,Functional
+TC10,Remove Item from Cart,User is on cart page,1. Remove an item from the cart,,The item is removed successfully from the cart,Functional
+,,,2. Confirm removal,,,
+TC11,Attempt to Add Out-of-Stock Item to Cart,User is logged in / Guest,1. Search for an out-of-stock item,Search term: 'out of stock item',User is informed that the item is out of stock,Functional
+,,,2. Attempt to add it to the cart,,,
+TC12,Add Item Without Logging In,User is logged out,1. Search for 'car accessories',Search term: 'car accessories',User is able to add items a guest,Functional
+,,,2. Try to add an item to the cart,,,
+TC13,Verify Search Bar Functionality,Browser opened,1. Open Amazon homepage,Search term: 'car accessories',Search bar retains the input value,Functional
+,,,2. Click on the search bar and type 'car accessories',,,
+,,,3. Press Tab,,,
+TC14,Search with No Results,Browser opened,1. Open Amazon homepage,Search term: 'abcxyz',No results found message is displayed,Functional
+,,,2. Enter an invalid search term like 'abcxyz',,,
+,,,3. Press Enter,,,
+TC15,Verify Sorting Options After Search,User is logged in / Guest,1. Search for 'car accessories',Search term: 'car accessories',Items are sorted correctly from high to low,Functional
+,,,2. Sort results by 'Price: High to Low',,,
+TC16,Verify Related Items on Product Page,User is on product page,1. Select a car accessory item,,Related items are displayed correctly,Functional
+,,,2. Check for related items section on the page,,,
+TC17,Validate Product Reviews,User is on product page,1. Select a car accessory item,,Product reviews and ratings are displayed correctly,Functional
+,,,2. Check for reviews and ratings,,,
+TC18,Check Product Details,User is on product page,1. Click on a car accessory,,Product details are displayed accurately,Functional
+,,,2. Verify the product details like dimensions and features,,,
+TC19,Check Add to Cart with Different Quantities,User is logged in / Guest,1. Select a product,Quantity: 2,Two items are added to the cart,Functional
+,,,2. Change the quantity to 2,,,
+,,,3. Click 'Add to Cart',,,
+TC20,Check for Size/Color Variants,User is on product page,1. Select a product with variants (like size or color),,The selected variant is added to the cart,Functional
+,,,2. Choose a variant,,,
+,,,3. Add to cart,,,
+TC21,Validate Navigation Back to Search Results,User is on product page,1. Click 'Back' to return to search results after adding to cart,,User returns to the correct search results,Functional
+TC22,Check for Availability Notification,User is on product page,1. Search for a product,,Notification appears if the item is out of stock,Functional
+,,,2. Check if out-of-stock notification is shown,,,
+TC23,Verify Cart Persistence,User is logged in,1. Add item to cart,,The item is still in the cart after logging back in,Functional
+,,,2. Log out,,,
+,,,3. Log back in,,,
+TC24,Validate Checkout Button,User is on cart page,1. Verify that the 'Proceed to Checkout' button is enabled,,Button is enabled when items are in the cart,Functional
+TC25,Test Multiple Browser Tabs,User is logged in / Guest,"1. Open Amazon in one tab, search for 'car accessories' in another tab, and add an item to cart",,Item from the second tab is added to the same cart,Non-Functional
+TC26,Check Browser Compatibility,Browser opened,"1. Open Amazon homepage in different browsers (Chrome, Firefox, Edge)",,Homepage loads correctly across all browsers,Non-Functional
+TC27,Validate Page Load Time,User accesses product page,1. Measure the load time of the product page,,"Page loads within an acceptable time (e.g., < 2 seconds)",Non-Functional
+TC28,Check Mobile Responsiveness,User accesses Amazon on mobile,1. Open Amazon on a mobile device,,The page is responsive and all elements are accessible,Non-Functional
+,,,2. Navigate to 'car accessories',,,
+TC30,Test Search Functionality Under Load,User is logged in / Guest,1. Simulate multiple users performing searches simultaneously,,Search results return correctly under load,Non-Functional
+TC31,Check Security Features,User is on login / Guest page,1. Attempt to log in with invalid credentials,Invalid credentials,User receives appropriate error message and no data breach occurs,Non-Functional
+,,,,,,
