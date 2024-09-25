@@ -1,0 +1,33 @@
+Test Case ID,Title,Preconditions,Test Steps,Test Data,Expected Result,Functional/Non-Functional
+TC01,Open Today's Deals,Browser opened,1. Go to the Amazon homepage,,Today's Deals page opens,Functional
+,,,2. Click on 'Today's Deals',,,
+TC02,Select Filters for Headphones and Grocery,User is on Today's Deals,"1. On the left side filters, select 'Headphones'",,Filtered results for headphones and grocery are displayed,Functional
+,,,2. Select 'Grocery',,,
+TC03,Select Discount Filter,User has applied filters,"1. From the discount part, select '10% off or more'",,Only items with at least 10% discount are displayed,Functional
+TC04,Check Pagination,User is on filtered results,1. Go to the fourth page using pagination controls,,The fourth page loads with the correct items,Functional
+TC05,Select Item from Today's Deals,User is on fourth page,1. Click on any item listed,,The selected item's product page opens,Functional
+TC06,Add Item to Cart from Today's Deals,User is on item page,1. Click 'Add to Cart',,Item is successfully added to the cart,Functional
+TC07,Validate Cart Items from Today's Deals,User is logged in,1. Go to the cart after adding item,,The cart displays the correct item added,Functional
+,,,2. Verify the item is listed,,,
+TC08,Check Price of Selected Item,User is on item page,1. Check the displayed price of the selected item,,Price is displayed correctly,Functional
+TC09,Verify Item Availability,User is on item page,1. Check if the item is in stock,,Stock status is displayed accurately,Functional
+TC10,Verify Filter Persistence,User has applied filters,"1. After applying filters, navigate away and back to check if they remain active",,Active filters are retained when navigating between pages,Functional
+TC11,Check Item Details from Today's Deals,User is on Today's Deals,1. Click on an item from Today's Deals,,Item details are displayed correctly,Functional
+,,,2. Verify its details,,,
+TC12,Check for Reviews on Today's Deals,User is on Today's Deals,1. Select an item,,Reviews and ratings are visible,Functional
+,,,2. Verify that reviews and ratings are present,,,
+TC13,Validate Discount Percentage Display,User is on Today's Deals,1. Click on an item and check the displayed discount percentage,,Discount percentage matches the offer,Functional
+TC14,Verify Navigation Back to Today's Deals,User is on item page,1. Click 'Back' after viewing an item from Today's Deals,,User returns to Today's Deals page correctly,Functional
+TC15,Test Empty Cart After Adding from Deals,User is logged in / Guest,1. Open Today's Deals,,Cart is empty after removal,Functional
+,,,2. Add an item to the cart,,,
+,,,3. Remove it from the cart,,,
+TC16,Validate Item Comparison from Today's Deals,User is on Today's Deals,1. Select multiple items and compare their details,,Comparison details are displayed correctly,Functional
+TC17,Check for Notification of Low Stock,User is on Today's Deals,1. Add an item to the cart that is low in stock,,User receives a low stock notification,Functional
+,,,2. Verify the stock notification,,,
+TC18,Verify Mobile View for Today's Deals,User switches to mobile view,1. Open Today's Deals in mobile view,,Layout is responsive and filters are functional,Non-Functional
+,,,2. Check layout and filters,,,
+TC19,Validate Page Load Time,User accesses Today's Deals,1. Open Today's Deals and measure the load time,,"Page loads within an acceptable time (e.g., < 2 seconds)",Non-Functional
+TC20,Verify Response Time on Filter Selection,User is on Today's Deals,1. Apply a filter and measure the response time,,"Response time is within acceptable limits (e.g., < 1 second)",Non-Functional
+TC21,Validate Best Seller Filter,User is on Today's Deals,1. Apply 'Best Seller' filter and check for items,,Only best-selling items are displayed,Functional
+TC22,Check Search Functionality Under Load,User is logged in,1. Simulate multiple users applying filters simultaneously,,Filters respond correctly under load,Non-Functional
+TC23,Check Browser Compatibility,User accesses Today's Deals,"1. Open Today's Deals in different browsers (Chrome, Firefox, Edge)",,Today's Deals page loads correctly across all browsers,Non-Functional
