@@ -7,7 +7,7 @@ This project automates tasks on the Amazon and KSRTC websites using Selenium and
 
 ### Task 1: Amazon Automation
 - **Scenario 1**: Search for "car accessories," select the first item, add it to the cart, and verify its presence in the cart.
-- **Scenario 2**: Access Today's Deals, filter for "Headphones" and "Grocery," select items with "10% off or more," navigate to the fourth page, and add any item to the cart.
+- **Scenario 2**: Access Today's Deals, filter for "Audible Books & Originals" Because I did not find the "Headphones"," select items with "10% off or more," navigate to the fourth page, and add any item to the cart.
 
 ### Task 2: KSRTC Automation
 - Navigate to KSRTC, select the route from "CHIKKAMAGALURU" to "BENGALURU," choose the arrival date, search for buses, select a seat, input boarding and dropping points, fill in passenger details, and complete the payment fields without submitting.
