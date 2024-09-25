@@ -22,6 +22,7 @@ This project automates tasks on the Amazon and KSRTC websites using Selenium and
 - **Maven** for project management.
 - **Page Object Model (POM)** design pattern for better maintainability and reusability.
 - **GitHub** for version control.
+- **ChatGPT** for Excel integration in task3.
 
 ## Conclusion
 Successfully automated tasks on Amazon and KSRTC. Future work includes completing the data processing task in Python.
